@@ -42,18 +42,22 @@ circuit_t afficheMenuCircuit2022(circuit_t *tabCircuits, int nbCircuits){
 
     }
     printf("Quel est le numéro du circuit que vous voulez choisir : ");
-    scanf("%d",&choix);
+    //scanf("%d",&choix);
+    printf("1 (choix déjà fait pour aller plus vite\n");
+    choix = 1;
     choix--;
     memcpy( &circuitChoisi , &(tabCircuits[choix]),sizeof(circuit_t));
-    nbTours = calculNbTours(circuitChoisi);
 
+    return circuitChoisi;
+}
+
+void afficheUnCircuit(circuit_t circuitChoisi){
+    int nbTours = calculNbTours(circuitChoisi);
     printf("Vous avez choisi : %s. Ce circuit fait %.3f km. Il comprendra donc %d tours afin qu'au total les voitures effectuent %.3f km\n",
            circuitChoisi.nom,
            circuitChoisi.longueur,
            nbTours,
            circuitChoisi.longueur*nbTours);
-
-    return circuitChoisi;
 }
 
 int calculNbCircuits (int annee) {// si annee = 0 on compte tous les circuits, sinon on compte uniquement les circuits de l'année passée en paramètres

@@ -7,7 +7,7 @@
 #include <time.h>
 
 #define INFINITE 32000
-#define NB_MAX_VOtures 100
+#define NB_MAX_Voitures 100
 
 //PARAMETRE DE MARGE
 //INTERVALLE DE TEMPS POUR LES SECTEURS
@@ -28,8 +28,14 @@ typedef struct{
 
 }voiture_t;
 
-void initVoitures(voiture_t tabVoitures [], int *nbVoitures);
+int getNBVoitures();
+
+void initVoitures(voiture_t *tabVoitures);
 
 void voitureFait1Tour(voiture_t *voiture, int nbTours);
+
+void afficheUneVoiture(voiture_t v);
+
+void afficheTout(voiture_t *tabVoitures);
 
 #endif // __VOITURE__

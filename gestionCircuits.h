@@ -28,4 +28,5 @@ int calculNbCircuits (int annee); // si annee = 0 on compte tous les circuits, s
 
 void initCircuit(circuit_t **tabCircuits, int nbCircuits, int annee); // cette fonction charge tous les circuits en MC // si annee = 0 on charge tous les circuits, sinon on charge uniquement les circuits de l'année passée en paramètres
 
+void afficheUnCircuit(circuit_t circuitChoisi);
 #endif // __GESTION_CIRCUIT__

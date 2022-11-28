@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1669651257 source:/home/mnv/Projet 2022/f1_2022/main.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	"gestionCircuits.h"
+	"voiture.h"
+
+1669641077 source:/home/mnv/Projet 2022/f1_2022/gestionCircuits.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1669641032 /home/mnv/Projet 2022/f1_2022/gestionCircuits.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1669644660 source:/home/mnv/Projet 2022/f1_2022/voiture.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<time.h>
+
+1669651140 /home/mnv/Projet 2022/f1_2022/voiture.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<time.h>
+
